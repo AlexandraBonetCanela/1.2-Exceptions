@@ -1,7 +1,5 @@
 package org.alexandra;
 
-import java.math.BigDecimal;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -23,13 +21,11 @@ public class Main {
         calculateTotalSale(saleWithProducts);
         System.out.println("First sale Total Price: "+ saleWithProducts.getTotalPrice());
 
-        //2.Calculating total price of a sale with no products
         Sale saleWithoutProducts = new Sale();
 
         System.out.println("Calculating Second sale Total Price...");
         calculateTotalSale(saleWithoutProducts);
 
-        //3.Accessing to the nonexistent third product of the first order
         System.out.println("Trying to access nonexistent third product in first sale...");
         accessProductInSale(saleWithProducts, 2);
     }
