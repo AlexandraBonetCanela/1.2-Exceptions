@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Alexandra Bonet - Excepcions: Nivell 1 Exercici 1");
-        
+
         Product chips = new Product("Chips", 1.5);
         System.out.println("Creating product: " + chips.getName() + " price: " + chips.getPrice());
 

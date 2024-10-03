@@ -25,8 +25,10 @@ public class Sale {
 
     public double calculateTotal() throws EmptySaleException {
         if(products.isEmpty()){
-            throw new EmptySaleException("You first need to add products to the basket in order to process the order");
+
+            throw new EmptySaleException();
         } else{
+            totalPrice = 0.0;
             for(Product p : products){
                 totalPrice += p.getPrice();
             }

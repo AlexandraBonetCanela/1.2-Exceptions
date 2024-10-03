@@ -2,11 +2,8 @@ package org.alexandra;
 
 public class EmptySaleException  extends Exception {
 
-    public EmptySaleException() {
-        super();
-    }
 
-    public EmptySaleException(String errorMessage) {
-        super(errorMessage);
+    public EmptySaleException() {
+        super("You first need to add products to the basket in order to process the order");
     }
 }
